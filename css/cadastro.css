@@ -1,0 +1,149 @@
+:root{
+  --primary-color: white;
+  --second-color: #C0C0C0;
+  --btn-color: #6FB555;
+  --font-color: #757575;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.main{
+  width: 40%;
+  height: 75%;
+  border: 1px solid var(--second-color);
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px 3px var(--second-color);
+}
+
+.div-main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div-main h1{
+  margin-bottom: 30px;
+  color: var(--font-color);
+}
+
+.form-login{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input{
+  border: 0;
+  width: 50%;
+  height: 35px;
+  margin-bottom: 20px;
+  border-bottom: var(--second-color) 1px solid;
+  color: var(--font-color);
+  font-weight: 300;
+  background-color: var(--primary-color);
+  padding-left: 3%;
+  letter-spacing: 2px;
+}
+
+.input-username{
+  background-image: url(../images/icons8-account-24.png);
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: center;
+}
+
+.input-password-one, .input-password-two{
+  background-image: url(../images/icons8-lock-24.png);
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: center;
+}
+
+input::placeholder{
+  color: #757575;
+}
+
+input:focus{
+  border-bottom: var(--second-color) 1px solid;
+  outline: 0;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.btn-login{
+  width: 50%;
+  height: 35px;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  background-color: var(--btn-color);
+  box-shadow: 0px 0px 2px 2px var(--btn-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.btn-login:focus{
+  border: 0;
+  box-shadow: 0px 0px 4px 4px var(--btn-color);
+}
+
+.login-account{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.login-account p{
+  color: var(--font-color);
+}
+
+.login-account a{
+  color: var(--btn-color);
+  text-decoration: none;
+}
+
+.login-account a:focus{
+  filter: drop-shadow(0px 0px 0.5px var(--btn-color));
+}
+
+@media screen and (max-width: 1024px){
+  .main{
+    width: 90%;
+    height: 100%;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-username,
+  .input-password-one,
+  .input-password-two,
+  .btn-login{
+    width: 100%;
+  }
+}
