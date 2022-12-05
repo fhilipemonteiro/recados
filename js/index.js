@@ -36,6 +36,8 @@ document.querySelector('#form-login').addEventListener('submit', (event) => {
       sessionStorage.setItem('usuarioLogado', JSON.stringify(user));
       location.assign('../recados.html');
 
+
+
     } else {
 
       alert('Usuário ou senha incorretos.');
