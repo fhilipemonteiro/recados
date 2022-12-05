@@ -4,99 +4,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anotações</title>
-  <link rel="stylesheet" href="./css/index.css">
+  <title>Login</title>
+  <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-
-  <header class="header-body">
-    
-  </header>
 
   <main class="main">
 
     <div class="div-main">
 
-      <div class="header-main">
+      <h1>BEM VINDO</h1>
 
-        <div class="main-header">
-  
-            <h1>Anotações</h1>
+      <form action="" class="form-login" id="form-login">
     
-        </div>
+        <input type="text" placeholder="usuário" name="user" class="input-username" id="input-username" autocomplete="off" required>
+
+        <input type="password" placeholder="senha" name="password" class="input-password" id="input-password" autocomplete="off" required>
+
+        <input type="submit" value="ENTRAR" class="btn-login" id="btn-login">
     
-        <div class="nav-bar">
-  
-          <form action="" class="form-new-note" id="form-new-note">
-  
-            <div class="input-text">
-  
-              <div class="div-description">
-                <input type="text" class="input-description" id="input-description" placeholder="Descrição" autocomplete="off" required>
-              </div>
-    
-              <div class="div-detailing">
-                <input type="text" class="input-detailing" id="input-detailing" placeholder="Detalhamento" autocomplete="off" required>
-              </div>
-  
-            </div>
-  
-            <div class="input-btn">
-  
-              <div>
-                <input type="submit" class="btn-criar" value="CRIAR">
-              </div>
-  
-            </div>
-  
-          </form>
-  
-        </div>
+      </form>
+
+      <div class="new-account">
+
+        <p>Não possui uma conta? <a href="./cadastro.html">Criar conta</a></p>
 
       </div>
-
-      <div class="div-table">
-
-        <table>
-
-          <thead>
-            <tr class="tr-head">
-              <td class="th-id">#</td>
-              <td class="th-descricao">Descrição</td>
-              <td class="th-detalhamento">Detalhamento</td>
-              <td class="th-acao">Ação</td>
-            </tr>
-          </thead>
-
-          <tbody>
-            
-            <!-- <tr class="tr-card">
-              <td class="td-id">1</td>
-              <td class="td-descricao">Cachorro</td>
-              <td class="td-detalhamento">Passear</td>
-              <td class="td-acao">
-                <div class="div-btn-acao">
-                  <div>
-                    <button class="btn-editar" id="btn-editar">EDITAR</button>
-                  </div>
-        
-                  <div>
-                    <button class="btn-excluir" id="btn-excluir">EXCLUIR</button>
-                  </div>
-                </div>
-              </td>
-            </tr> -->
-
-          </tbody>
-
-      </table>
-
-      </div>
+  
     </div>
 
   </main>
 
-  <script src="./js/index.js"></script>
+  <script src="./js/login.js"></script>
   
 </body>
 </html>
