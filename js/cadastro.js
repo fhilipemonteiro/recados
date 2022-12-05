@@ -44,7 +44,7 @@ document.querySelector("#form-cadastro").addEventListener('submit', event => {
 
     sessionStorage.setItem('usuarioLogado', JSON.stringify(userTemporary));
 
-    location.assign('../recados.html');
+    location.assign('./recados.html');
 
   };
 
